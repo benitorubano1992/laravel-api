@@ -16,14 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/test', function () {
-    return response()->json([
-        'success' => true,
-        'results' => [
-            'name' => 'Olga',
-            'state' => 'Russia'
-        ]
-    ]);
-});
+
 
 Route::get('projects', [ProjectController::class, 'index']);
